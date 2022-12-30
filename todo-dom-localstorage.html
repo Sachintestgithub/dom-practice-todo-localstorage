@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="name" id="name" />
+
+    <button id="btnClick">Add</button>
+    <ul id="box"></ul>
+    <span class="error"></span>
+
+    <script>
+      let inputdata = document.getElementById("name");
+
+      let btn = document.getElementById("btnClick");
+      let list = document.querySelector("ul");
+      let arr = [];
+      window.addEventListener("load", () => {
+        arr = JSON.parse(localStorage.getItem("todata"));
+        console.log(arr);
+      });
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        //console.log(inputdata.value)
+        let child = document.createElement("li");
+        child.innerText = inputdata.value;
+        list.appendChild(child);
+        arr.push(inputdata.value);
+        localStorage.setItem("todata", JSON.stringify(arr));
+        inputdata.value = "";
+      });
+    </script>
+  </body>
+</html>

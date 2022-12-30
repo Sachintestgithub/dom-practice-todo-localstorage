@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.from-our-blog{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0px 0px 10px;
+    line-height: 1.5rem;
+    color: rgb(28, 28, 28);
+
+}
+.computer{
+    width: 357px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.a1{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid red;
+    background: rgb(248, 248, 248);
+    padding: rem;
+}
+.b1{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 110rem;
+
+}
+.c1{
+  /* border: 1px solid green;   */
+  width: 100%;
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.d1{
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 33.3333%
+}
+.d1 div{
+    position: relative;
+    height: 21rem;
+    border-radius: 6px;
+}
+
+.line{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+
+}
+.middle-set{
+    line-height: 1.5;
+    margin: 2rem 0px 1rem;
+    color: rgb(156, 156, 156);
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ask{
+    margin-top: 1rem;
+}
+@media only screen and (max-width: 850px) {
+.line{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: aqua;
+}
+}
+

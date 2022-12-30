@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.computer{
+    height: 250px;
+    width: 357px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+.p1 {
+  background: rgb(248, 248, 248);
+  padding: 3rem;
+}
+.p2 {
+  position: relative;
+  max-width: 110rem;
+  max-height: initial;
+  margin: 0px auto;
+}
+.from-our-blog {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: rgb(28, 28, 28);
+    margin: 0px 0px 10px;
+    font-weight: 500
+}
+.p3{
+    position: relative;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+.p4{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.para-class{
+
+    
+}
